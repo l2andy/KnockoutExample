@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ts:Estructuras xmlns:ts="http://estructuras.org">
+  <ts:Estructura ID="001">
+    <cl:Clientes xmlns:cl="http://clientes.org">
+      <cl:Cliente Nombre="TECNOLOGIA DE MEXICO S.A.P.I." RFC="XXX071221BBB">
+        <cl:Direcciones>
+          <cl:Direccion Calle="Cerrado Apodaca" Colonia="Antigua Argentina" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Principaal"></cl:Direccion>
+        </cl:Direcciones>
+        <cl:DatosContacto>
+          <cl:Telefonos>
+            <cl:Telefono Numero="5512457896" Tipo="Oficina"></cl:Telefono>
+            <cl:Telefono Numero="5548785212" Tipo="Celular"></cl:Telefono>
+          </cl:Telefonos>
+          <cl:Emails>
+            <cl:Correo Direccion="tec1@TM.org"></cl:Correo>
+            <cl:Correo Direccion="tec2@TM.org"></cl:Correo>
+            <cl:Correo Direccion="tec3@TM.org"></cl:Correo>
+            <cl:Correo Direccion="tec4@TM.org"></cl:Correo>
+          </cl:Emails>
+        </cl:DatosContacto>
+      </cl:Cliente>
+      <cl:Cliente Nombre="Everardo Martinez Martinez" RFC="XXXX650215000">
+        <cl:Direcciones>
+          <cl:Direccion Calle="Cerrado Apodaca" Colonia="Antigua Argentina" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Principaal"></cl:Direccion>
+        </cl:Direcciones>
+        <cl:DatosContacto>
+          <cl:Telefonos>
+            <cl:Telefono Numero="5512457896" Tipo="Oficina"></cl:Telefono>
+            <cl:Telefono Numero="5548785212" Tipo="Celular"></cl:Telefono>
+          </cl:Telefonos>
+          <cl:Emails>
+            <cl:Correo Direccion="tec1@TM.org"></cl:Correo>
+            <cl:Correo Direccion="tec2@TM.org"></cl:Correo>
+            <cl:Correo Direccion="tec3@TM.org"></cl:Correo>
+            <cl:Correo Direccion="tec4@TM.org"></cl:Correo>
+          </cl:Emails>
+        </cl:DatosContacto>
+      </cl:Cliente>
+    </cl:Clientes>
+  </ts:Estructura>
+  <ts:Estructura ID="002">
+    <cl:Clientes xmlns:cl="http://clientes.org">
+      <cl:Cliente Nombre="" RFC="">
+        <cl:Direcciones>
+          <cl:Direccion></cl:Direccion>
+        </cl:Direcciones>
+        <cl:DatosContacto>
+          <cl:Telefonos>
+            <cl:Tel Numero=""></cl:Tel>
+          </cl:Telefonos>
+          <cl:Emails>
+            <cl:Correo Direccion=""></cl:Correo>
+          </cl:Emails>
+        </cl:DatosContacto>
+      </cl:Cliente>
+      <cl:Cliente Nombre="" RFC="">
+        <cl:Direcciones>
+          <cl:Direccion></cl:Direccion>
+        </cl:Direcciones>
+        <cl:DatosContacto>
+          <cl:Telefonos>
+            <cl:Tel Numero=""></cl:Tel>
+          </cl:Telefonos>
+          <cl:Emails>
+            <cl:Correo Direccion=""></cl:Correo>
+          </cl:Emails>
+        </cl:DatosContacto>
+      </cl:Cliente>
+      <cl:Cliente Nombre="" RFC="">
+        <cl:Direcciones>
+          <cl:Direccion></cl:Direccion>
+        </cl:Direcciones>
+        <cl:DatosContacto>
+          <cl:Telefonos>
+            <cl:Tel Numero=""></cl:Tel>
+          </cl:Telefonos>
+          <cl:Emails>
+            <cl:Correo Direccion=""></cl:Correo>
+          </cl:Emails>
+        </cl:DatosContacto>
+      </cl:Cliente>
+    </cl:Clientes>
+  </ts:Estructura>
+  <ts:Estructura ID="003">
+    <cl:Clientes xmlns:cl="http://clientes.org">
+      <cl:Cliente Nombre="" RFC="">
+        <cl:Direcciones>
+          <cl:Direccion></cl:Direccion>
+        </cl:Direcciones>
+        <cl:DatosContacto>
+          <cl:Telefonos>
+            <cl:Tel Numero=""></cl:Tel>
+          </cl:Telefonos>
+          <cl:Emails>
+            <cl:Correo Direccion=""></cl:Correo>
+          </cl:Emails>
+        </cl:DatosContacto>
+      </cl:Cliente>
+      <cl:Cliente Nombre="" RFC="">
+        <cl:Direcciones>
+          <cl:Direccion></cl:Direccion>
+        </cl:Direcciones>
+        <cl:DatosContacto>
+          <cl:Telefonos>
+            <cl:Tel Numero=""></cl:Tel>
+          </cl:Telefonos>
+          <cl:Emails>
+            <cl:Correo Direccion=""></cl:Correo>
+          </cl:Emails>
+        </cl:DatosContacto>
+      </cl:Cliente>
+      <cl:Cliente Nombre="" RFC="">
+        <cl:Direcciones>
+          <cl:Direccion></cl:Direccion>
+        </cl:Direcciones>
+        <cl:DatosContacto>
+          <cl:Telefonos>
+            <cl:Tel Numero=""></cl:Tel>
+          </cl:Telefonos>
+          <cl:Emails>
+            <cl:Correo Direccion=""></cl:Correo>
+          </cl:Emails>
+        </cl:DatosContacto>
+      </cl:Cliente>
+    </cl:Clientes>
+  </ts:Estructura>
+  <ts:Estructura ID="004">
+    <cl:Clientes xmlns:cl="http://clientes.org">
+      <cl:Cliente Nombre="" RFC="">
+        <cl:Direcciones>
+          <cl:Direccion></cl:Direccion>
+        </cl:Direcciones>
+        <cl:DatosContacto>
+          <cl:Telefonos>
+            <cl:Tel Numero=""></cl:Tel>
+          </cl:Telefonos>
+          <cl:Emails>
+            <cl:Correo Direccion=""></cl:Correo>
+          </cl:Emails>
+        </cl:DatosContacto>
+      </cl:Cliente>
+      <cl:Cliente Nombre="" RFC="">
+        <cl:Direcciones>
+          <cl:Direccion></cl:Direccion>
+        </cl:Direcciones>
+        <cl:DatosContacto>
+          <cl:Telefonos>
+            <cl:Tel Numero=""></cl:Tel>
+          </cl:Telefonos>
+          <cl:Emails>
+            <cl:Correo Direccion=""></cl:Correo>
+          </cl:Emails>
+        </cl:DatosContacto>
+      </cl:Cliente>
+      <cl:Cliente Nombre="" RFC="">
+        <cl:Direcciones>
+          <cl:Direccion></cl:Direccion>
+        </cl:Direcciones>
+        <cl:DatosContacto>
+          <cl:Telefonos>
+            <cl:Tel Numero=""></cl:Tel>
+          </cl:Telefonos>
+          <cl:Emails>
+            <cl:Correo Direccion=""></cl:Correo>
+          </cl:Emails>
+        </cl:DatosContacto>
+      </cl:Cliente>
+    </cl:Clientes>
+  </ts:Estructura>
+</ts:Estructuras>

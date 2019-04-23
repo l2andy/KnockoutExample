@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ts:Estructuras xmlns:cl="http://clientes.org" xmlns:ts="http://estructuras.org">
+  <ts:Estructura ID="001" Nombre="Ciudad de México">
+    <cl:Clientes>
+      <cl:Cliente ID="84f220af-7d03-5b32-e054-2c27d784fca8" Nombre="TECNOLOGIA DE MEXICO S.A.P.I." RFC="XXX071221BBB">
+        <cl:Direcciones>
+          <cl:Direccion Calle="Cerrado Apodaca" Colonia="Antigua Argentina" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Principal" />
+        </cl:Direcciones>
+        <cl:DatosContacto>
+          <cl:Telefonos>
+            <cl:Telefono Numero="5512457896" Tipo="Oficina" />
+            <cl:Telefono Numero="5548785212" Tipo="Celular" />
+          </cl:Telefonos>
+          <cl:Emails>
+            <cl:Correo Direccion="tec1@TM.org" />
+            <cl:Correo Direccion="tec2@TM.org" />
+            <cl:Correo Direccion="tec3@TM.org" />
+            <cl:Correo Direccion="tec4@TM.org" />
+            <cl:Correo Direccion="text@email1.mx" />
+          </cl:Emails>
+        </cl:DatosContacto>
+      </cl:Cliente>
+      <cl:Cliente ID="84f220af-7d04-5b32-e054-2c27d784fca7" Nombre="Everardo Martinez Martinez" RFC="XXXX650215000">
+        <cl:Direcciones>
+          <cl:Direccion Calle="Cerrado Apodaca" Colonia="Antigua Argentina" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Principaal" />
+          <cl:Direccion Calle="Cerrado Apodaca2" Colonia="Antigua Argentina2" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Principaal" />
+          <cl:Direccion Calle="Calle 1" Colonia="Colonia 1" CP="11000" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Trabajo" />
+        </cl:Direcciones>
+        <cl:DatosContacto>
+          <cl:Telefonos>
+            <cl:Telefono Numero="5512457896" Tipo="Oficina" />
+            <cl:Telefono Numero="5548785212" Tipo="Celular" />
+          </cl:Telefonos>
+          <cl:Emails>
+            <cl:Correo Direccion="tec1@TM.org" />
+            <cl:Correo Direccion="tec2@TM.org" />
+            <cl:Correo Direccion="tec3@TM.org" />
+            <cl:Correo Direccion="tec4@TM.org" />
+          </cl:Emails>
+        </cl:DatosContacto>
+      </cl:Cliente>
+    </cl:Clientes>
+  </ts:Estructura>
+  <ts:Estructura ID="002" Nombre="Hidalgo">
+    <cl:Clientes>
+      <cl:Cliente ID="4dc86c41-dab1-43fc-8b54-46a46b9413d0" Nombre="Nombre1" RFC="RFC">
+        <cl:Direcciones>
+          <cl:Direccion Calle="Calle Zapara" Colonia="Obrera" CP="11201" Municipio="Benito Juárez" Estado="Ciudad de México" Pais="México" Tipo="Referencia Personal" />
+        </cl:Direcciones>
+        <cl:DatosContacto>
+          <cl:Telefonos>
+            <cl:Telefono Numero="55545454" Tipo="Casa" />
+            <cl:Telefono Numero="4454554" Tipo="Casa chica" />
+          </cl:Telefonos>
+          <cl:Emails>
+            <cl:Correo Direccion="miemail@mail.mx" />
+          </cl:Emails>
+        </cl:DatosContacto>
+      </cl:Cliente>
+    </cl:Clientes>
+  </ts:Estructura>
+  <ts:Estructura ID="003" Nombre="Guerrero">
+    <cl:Clientes />
+  </ts:Estructura>
+  <ts:Estructura ID="004" Nombre="Mítica ciudad de Tlaxcala">
+    <cl:Clientes />
+  </ts:Estructura>
+</ts:Estructuras>

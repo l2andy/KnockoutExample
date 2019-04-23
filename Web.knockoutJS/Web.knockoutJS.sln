@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.knockoutJS", "Web.knockoutJS\Web.knockoutJS.csproj", "{886C4467-F943-4EC6-A1E3-69A5BC49113E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.knockoutJS.Tests", "Web.knockoutJS.Tests\Web.knockoutJS.Tests.csproj", "{2D96E71C-38D8-486C-AA8B-F39A0EDD646A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{886C4467-F943-4EC6-A1E3-69A5BC49113E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886C4467-F943-4EC6-A1E3-69A5BC49113E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886C4467-F943-4EC6-A1E3-69A5BC49113E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886C4467-F943-4EC6-A1E3-69A5BC49113E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D96E71C-38D8-486C-AA8B-F39A0EDD646A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D96E71C-38D8-486C-AA8B-F39A0EDD646A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D96E71C-38D8-486C-AA8B-F39A0EDD646A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D96E71C-38D8-486C-AA8B-F39A0EDD646A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

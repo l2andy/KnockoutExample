@@ -1,0 +1,187 @@
+﻿<script src="~/Scripts/App/Demo.js"></script>
+
+<script type="text/html" id="cliente-estructura-template">
+    <tr>
+        <td>
+            @*<span data-bind="text:$data.ID"></span>*@
+            <input data-bind="value:$data.ID, readonly:($data.ID != null)" class="form-control" />
+        </td>
+        <td>
+            @*<span data-bind="text:$data.Nombre"></span>*@
+            <input data-bind="value:$data.Nombre" class="form-control" />
+        </td>
+        <td>
+            @*<span data-bind="text:$data.RFC"></span>*@
+            <input data-bind="value:$data.RFC" class="form-control" />
+        </td>
+        <td>
+            <a data-bind="text:$data.Direcciones().length, click:$root.muestraModal('modal_Direccion' + $data.ID())" href="#"></a>
+            <div class="modal" tabindex="-1" role="dialog" data-bind="attr:{id:('modal_Direccion' + $data.ID())}">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                        </div>
+                        <div class="modal-body text-center" style="min-height: 80px;">
+                            <div class="col-xs-12" id="toolbarAccionesDirecciones">
+                                <div class="btn-group">
+                                    <button class="btn btn-success"><span class="fa fa-plus" title="Agregar Direccion" data-bind="click:nuevaDireccion"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <table class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Calle</th>
+                                            <th>Colonia</th>
+                                            <th>CP</th>
+                                            <th>Municipio</th>
+                                            <th>Estado</th>
+                                            <th>Pais</th>
+                                            <th>Tipo</th>
+                                            <th>&nbsp;</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody data-bind="foreach:$data.Direcciones">
+                                        <tr>
+                                            <td><span data-bind="text:Calle"></span></td>
+                                            <td><span data-bind="text:Colonia"></span></td>
+                                            <td><span data-bind="text:CP"></span></td>
+                                            <td><span data-bind="text:Municipio"></span></td>
+                                            <td><span data-bind="text:Estado"></span></td>
+                                            <td><span data-bind="text:Pais"></span></td>
+                                            <td><span data-bind="text:Tipo"></span></td>
+                                            <td><button class="btn btn-info" data-bind="click:$parent.seleccionaDireccion"><span class="fa fa-edit"></span></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-xs-12">
+                                <div style="border:1px solid;padding:5px;" data-bind="visible:DireccionSeleccionada">
+                                    <table data-bind="with:DireccionSeleccionada">
+                                        <tr><th>Calle:</th><td><input data-bind="value:Calle" /></td></tr>
+                                        <tr><th>Colonia:</th><td><input data-bind="value:Colonia" /></td></tr>
+                                        <tr><th>CP:</th><td><input data-bind="value:CP" /></td></tr>
+                                        <tr><th>Municipio:</th><td><input data-bind="value:Municipio" /></td></tr>
+                                        <tr><th>Estado:</th><td><input data-bind="value:Estado" /></td></tr>
+                                        <tr><th>Pais:</th><td><input data-bind="value:Pais" /></td></tr>
+                                        <tr><th>Tipo:</th><td><input data-bind="value:Tipo" /></td></tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+        <td>
+            <a data-bind="click:$root.muestraModal('modal_Contacto' + $data.ID())">Ver</a>
+            <div class="modal" tabindex="-1" role="dialog" data-bind="attr:{id:('modal_Contacto' + $data.ID())}">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                        </div>
+                        <div class="modal-body text-center" style="min-height: 80px;" data-bind="with:$data.DatosContacto">
+                            <div class="col-xs-12" id="toolbarAccionesContacto">
+                                <div class="btn-group">
+                                    <button class="btn btn-success"><span class="fa fa-plus fa-envelope" title="Agregar Email" data-bind="click:nuevoEmail"></span></button>
+                                    <button class="btn btn-success"><span class="fa fa-plus fa-phone" title="Agregar Teléfono" data-bind="click:nuevoTelefono"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <table class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Tipo</th>
+                                            <th>Contacto</th>
+                                            <th>&nbsp;</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody data-bind="foreach:Emails">
+                                        <tr>
+                                            <td>Email</td>
+                                            <td><span data-bind="text:Direccion"></span></td>
+                                            <td><button class="btn btn-info" data-bind="click:$parent.seleccionaContacto"><span class="fa fa-edit"></span></button></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody data-bind="foreach:Telefonos">
+                                        <tr>
+                                            <td>Teléfono</td>
+                                            <td><span data-bind="text:Numero"></span></td>
+                                            <td><button class="btn btn-info" data-bind="click:$parent.seleccionaContacto"><span class="fa fa-edit"></span></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-xs-12">
+                                <div style="border:1px solid;padding:5px;" data-bind="visible:ContactoSeleccionado">
+                                    <table data-bind="with:ContactoSeleccionado">
+                                        <tr><th>Tipo:</th><td><span data-bind="text:$data.Numero?'Teléfono':'Email'"></span></td></tr>
+                                        <tr><th>Contacto:</th><td><input data-bind="value:$data.Numero?Numero:Direccion" /></td></tr>
+                                        @*<tr data-bind="visible:$data.Numero"><th>Contacto:</th><td><input data-bind="value:Numero" /></td></tr>*@
+                                        <tr data-bind="visible:$data.Numero"><th>Tipo:</th><td><input data-bind="value:$data.Numero?Tipo:null" /></td></tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</script>
+
+
+<div class="row" id="mainDemo">
+    <!--ESTRUCTURAS-->
+    <div class="col-xs-12">
+        <h1>Buscador de Clientes</h1>
+        <br />
+        <div class="row">
+            <div class="col-xs-6">
+                <select id="ddlEstructuras" class="form-control" data-bind="value:EstructuraActual ,options: Estructuras, optionsValue: 'ID', optionsText: 'Nombre', optionsCaption: 'Selecciona una estructura...',"></select>
+            </div>
+
+        </div>
+        <div class="row" id="tblClientes">
+            <div class="col-xs-12" id="toolbarAcciones">
+                <div class="btn-group">
+                    <button class="btn btn-success"><span class="fa fa-plus" title="Agregar Cliente" data-bind="click:nuevoCliente"></span></button>
+                    <button class="btn btn-primary" data-bind="click:guardar"><span class="fa fa-save"></span></button>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>RFC</th>
+                            <th>Direcciones</th>
+                            <th>Datos de contacto</th>
+                        </tr>
+                    </thead>
+                    <tbody data-bind="template:{name:'cliente-estructura-template', foreach: Clientes}"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--ESTRUCTURAS-->
+</div>
+
+<script>
+    $(document).ready(function () {
+        $.clientes.CargaEstructuras();
+
+        $("#ddlEstructuras").change(function () {
+            _globalClienteViewModel.cargaClientes();
+        });
+    });
+</script>
