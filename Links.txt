@@ -1,0 +1,5 @@
+--	XML C#
+https://www.abrirllave.com/xsd/validacion-de-un-documento-xml-con-xsd.php
+
+--	XML SQL SERVER value() Method
+https://docs.microsoft.com/en-us/sql/t-sql/xml/value-method-xml-data-type?view=sql-server-2017
