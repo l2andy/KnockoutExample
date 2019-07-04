@@ -3,11 +3,11 @@ declare @xml xml;
 --<?xml version="1.0" encoding="utf-8" ?>
 select @xml = '
 <ts:Estructuras xmlns:cl="http://clientes.org" xmlns:ts="http://estructuras.org">
-  <ts:Estructura ID="001" Nombre="Ciudad de México">
+  <ts:Estructura ID="001" Nombre="Ciudad de MÃ©xico">
     <cl:Clientes>
       <cl:Cliente ID="84f220af-7d03-5b32-e054-2c27d784fca8" Nombre="TECNOLOGIA DE MEXICO S.A.P.I." RFC="XXX071221BBB">
         <cl:Direcciones>
-          <cl:Direccion Calle="Cerrado Apodaca" Colonia="Antigua Argentina" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Principal" />
+          <cl:Direccion Calle="Cerrado Apodaca" Colonia="Antigua Argentina" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de MÃ©xico" Pais="MÃ©xico" Tipo="Principal" />
         </cl:Direcciones>
         <cl:DatosContacto>
           <cl:Telefonos>
@@ -25,9 +25,9 @@ select @xml = '
       </cl:Cliente>
       <cl:Cliente ID="84f220af-7d04-5b32-e054-2c27d784fca7" Nombre="Everardo Martinez Martinez" RFC="XXXX650215000">
         <cl:Direcciones>
-          <cl:Direccion Calle="Cerrado Apodaca" Colonia="Antigua Argentina" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Principaal" />
-          <cl:Direccion Calle="Cerrado Apodaca2" Colonia="Antigua Argentina2" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Principaal" />
-          <cl:Direccion Calle="Calle 1" Colonia="Colonia 1" CP="11000" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Trabajo" />
+          <cl:Direccion Calle="Cerrado Apodaca" Colonia="Antigua Argentina" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de MÃ©xico" Pais="MÃ©xico" Tipo="Principaal" />
+          <cl:Direccion Calle="Cerrado Apodaca2" Colonia="Antigua Argentina2" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de MÃ©xico" Pais="MÃ©xico" Tipo="Principaal" />
+          <cl:Direccion Calle="Calle 1" Colonia="Colonia 1" CP="11000" Municipio="Miguel Hidalgo" Estado="Ciudad de MÃ©xico" Pais="MÃ©xico" Tipo="Trabajo" />
         </cl:Direcciones>
         <cl:DatosContacto>
           <cl:Telefonos>
@@ -44,9 +44,9 @@ select @xml = '
       </cl:Cliente>
       <cl:Cliente ID="2214ac87-8b30-4a5d-81e4-26b52cfcf5a2" Nombre="Berenice Perez" RFC="PEBE950101">
         <cl:Direcciones>
-          <cl:Direccion Calle="Cerrado Apodaca3" Colonia="Antigua Argentina3" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Principaal" />
-          <cl:Direccion Calle="Cerrado Apodaca4" Colonia="Antigua Argentina4" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Principaal" />
-          <cl:Direccion Calle="Calle 7" Colonia="Colonia 7" CP="11000" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Trabajo" />
+          <cl:Direccion Calle="Cerrado Apodaca3" Colonia="Antigua Argentina3" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de MÃ©xico" Pais="MÃ©xico" Tipo="Principaal" />
+          <cl:Direccion Calle="Cerrado Apodaca4" Colonia="Antigua Argentina4" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de MÃ©xico" Pais="MÃ©xico" Tipo="Principaal" />
+          <cl:Direccion Calle="Calle 7" Colonia="Colonia 7" CP="11000" Municipio="Miguel Hidalgo" Estado="Ciudad de MÃ©xico" Pais="MÃ©xico" Tipo="Trabajo" />
         </cl:Direcciones>
         <cl:DatosContacto>
           <cl:Telefonos>
@@ -63,9 +63,9 @@ select @xml = '
       </cl:Cliente>
       <cl:Cliente ID="13804361-8634-4b61-8e44-b6b52cfd01ab" Nombre="Angel Gutierrez" RFC="GUAN740829">
         <cl:Direcciones>
-          <cl:Direccion Calle="Cerrado Apodaca5" Colonia="Antigua Argentina5" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Principaal" />
-          <cl:Direccion Calle="Cerrado Apodaca6" Colonia="Antigua Argentina6" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Principaal" />
-          <cl:Direccion Calle="Calle 8" Colonia="Colonia 8" CP="11000" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Trabajo" />
+          <cl:Direccion Calle="Cerrado Apodaca5" Colonia="Antigua Argentina5" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de MÃ©xico" Pais="MÃ©xico" Tipo="Principaal" />
+          <cl:Direccion Calle="Cerrado Apodaca6" Colonia="Antigua Argentina6" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de MÃ©xico" Pais="MÃ©xico" Tipo="Principaal" />
+          <cl:Direccion Calle="Calle 8" Colonia="Colonia 8" CP="11000" Municipio="Miguel Hidalgo" Estado="Ciudad de MÃ©xico" Pais="MÃ©xico" Tipo="Trabajo" />
         </cl:Direcciones>
         <cl:DatosContacto>
           <cl:Telefonos>
@@ -82,9 +82,9 @@ select @xml = '
       </cl:Cliente>
       <cl:Cliente ID="52b6aa32-567b-4c81-87be-06b52cfd0d1d" Nombre="Nicolas Arrieta" RFC="ARNI560131">
         <cl:Direcciones>
-          <cl:Direccion Calle="Cerrado Apodaca7" Colonia="Antigua Argentina7" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Principaal" />
-          <cl:Direccion Calle="Cerrado Apodaca8" Colonia="Antigua Argentina8" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Principaal" />
-          <cl:Direccion Calle="Calle 9" Colonia="Colonia 9" CP="11000" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Trabajo" />
+          <cl:Direccion Calle="Cerrado Apodaca7" Colonia="Antigua Argentina7" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de MÃ©xico" Pais="MÃ©xico" Tipo="Principaal" />
+          <cl:Direccion Calle="Cerrado Apodaca8" Colonia="Antigua Argentina8" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de MÃ©xico" Pais="MÃ©xico" Tipo="Principaal" />
+          <cl:Direccion Calle="Calle 9" Colonia="Colonia 9" CP="11000" Municipio="Miguel Hidalgo" Estado="Ciudad de MÃ©xico" Pais="MÃ©xico" Tipo="Trabajo" />
         </cl:Direcciones>
         <cl:DatosContacto>
           <cl:Telefonos>
@@ -101,9 +101,9 @@ select @xml = '
       </cl:Cliente>
       <cl:Cliente ID="49acf159-d820-4bb4-b9c6-26b52cfd2b9a" Nombre="Gabriel Barrera" RFC="BAGA850510">
         <cl:Direcciones>
-          <cl:Direccion Calle="Cerrado Apodaca9" Colonia="Antigua Argentina9" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Principaal" />
-          <cl:Direccion Calle="Cerrado Apodaca10" Colonia="Antigua Argentina10" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Principaal" />
-          <cl:Direccion Calle="Calle 10" Colonia="Colonia 10" CP="11000" Municipio="Miguel Hidalgo" Estado="Ciudad de México" Pais="México" Tipo="Trabajo" />
+          <cl:Direccion Calle="Cerrado Apodaca9" Colonia="Antigua Argentina9" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de MÃ©xico" Pais="MÃ©xico" Tipo="Principaal" />
+          <cl:Direccion Calle="Cerrado Apodaca10" Colonia="Antigua Argentina10" CP="11400" Municipio="Miguel Hidalgo" Estado="Ciudad de MÃ©xico" Pais="MÃ©xico" Tipo="Principaal" />
+          <cl:Direccion Calle="Calle 10" Colonia="Colonia 10" CP="11000" Municipio="Miguel Hidalgo" Estado="Ciudad de MÃ©xico" Pais="MÃ©xico" Tipo="Trabajo" />
         </cl:Direcciones>
         <cl:DatosContacto>
           <cl:Telefonos>
@@ -124,7 +124,7 @@ select @xml = '
     <cl:Clientes>
       <cl:Cliente ID="4dc86c41-dab1-43fc-8b54-46a46b9413d0" Nombre="Nombre1" RFC="RFC">
         <cl:Direcciones>
-          <cl:Direccion Calle="Calle Zapata" Colonia="Obrera" CP="11201" Municipio="Benito Juárez" Estado="Ciudad de México" Pais="México" Tipo="Referencia Personal" />
+          <cl:Direccion Calle="Calle Zapata" Colonia="Obrera" CP="11201" Municipio="Benito JuÃ¡rez" Estado="Ciudad de MÃ©xico" Pais="MÃ©xico" Tipo="Referencia Personal" />
         </cl:Direcciones>
         <cl:DatosContacto>
           <cl:Telefonos>
@@ -257,7 +257,7 @@ select @xml = '
           </cl:Emails>
         </cl:DatosContacto>
       </cl:Cliente>
-      <cl:Cliente ID="bd757338-2c40-4e4f-a318-86b52e3aeee2" Nombre="Yoselin Nuñez" RFC="NUYO871111">
+      <cl:Cliente ID="bd757338-2c40-4e4f-a318-86b52e3aeee2" Nombre="Yoselin NuÃ±ez" RFC="NUYO871111">
         <cl:Direcciones>
           <cl:Direccion />
         </cl:Direcciones>
@@ -272,7 +272,7 @@ select @xml = '
       </cl:Cliente>
     </cl:Clientes>
   </ts:Estructura>
-  <ts:Estructura ID="004" Nombre="Mítica ciudad de Tlaxcala">
+  <ts:Estructura ID="004" Nombre="MÃ­tica ciudad de Tlaxcala">
     <cl:Clientes>
       <cl:Cliente ID="f59881bc-1cd2-4cdb-add1-a6b529353d7d" Nombre="Antonio Morales" RFC="MOAN910503">
         <cl:Direcciones>
@@ -334,17 +334,96 @@ select @xml = '
 select @xml
 
 --EJERCICIOS
+--declare @Nombre varchar(50)
+
+--set @Nombre = @xml.value('
+--declare namespace ts="http://estructuras.org";
+--(/ts:Estructuras/ts:Estructura[1]/@Nombre)[1]', 'varchar(59)')
+
+--select @Nombre
 
 --OBTENER  TODAS LAS ESTRUCTURAS
+--;with xmlnamespaces('http://estructuras.org' as ts)
+--select
+--	doc.nod.value('@ID','varchar(10)') ID,
+--	doc.nod.value('@Nombre','varchar(10)') Nombre
+--from @xml.nodes('/ts:Estructuras/ts:Estructura') doc(nod)
 
 --OBTENER TODOS LOS CLIENTES (NOMBRE, RFC, ESTRUCTURA) DE TODAS LAS ESTRUCTURAS
+--;with xmlnamespaces('http://estructuras.org' as ts, 'http://clientes.org' as cl)
+--select
+--	doc.nod.value('@ID','varchar(10)') ID,
+--	doc.nod.value('@Nombre','varchar(10)') Nombre,
+--	doc1.nod1.value('@Nombre','varchar(10)') Nombre_Cliente,
+--	doc1.nod1.value('@RFC','varchar(10)') RFC_Cliente
+--from @xml.nodes('/ts:Estructuras/ts:Estructura') doc(nod)
+--cross apply doc.nod.nodes('cl:Clientes/cl:Cliente') as doc1(nod1)
 
 --OBTENER TODOS LOS CLIENTES DE UNA ESTRUCTURA (a elegir)
+--;with xmlnamespaces('http://estructuras.org' as ts, 'http://clientes.org' as cl)
+--select
+--	doc.nod.value('@ID','varchar(10)') ID,
+--	doc.nod.value('@Nombre','varchar(10)') Nombre,
+--	doc1.nod1.value('@Nombre','varchar(10)') Nombre_Cliente,
+--	doc1.nod1.value('@RFC','varchar(10)') RFC_Cliente
+--from @xml.nodes('/ts:Estructuras/ts:Estructura[@Nombre="Hidalgo"]') doc(nod)
+--cross apply doc.nod.nodes('cl:Clientes/cl:Cliente') as doc1(nod1)
 
 --OBTENER TODOS LOS DATOS DE CONTACTO DE 'ANTONIO MORALES'
+--;with xmlnamespaces('http://estructuras.org' as ts, 'http://clientes.org' as cl)
+--select
+--	doc.nod.value('@ID','varchar(10)') ID,
+--	doc.nod.value('@Nombre','varchar(20)') Ciudad,
+--	doc1.nod1.value('@Nombre','varchar(50)') Nombre_Cliente,
+--	doc1.nod1.value('@RFC','varchar(10)') RFC_Cliente,
+--	doc3.nod3.value('@Numero','varchar(10)') Numero_Telefono,
+--	doc3.nod3.value('@Tipo','varchar(10)') Tipo,
+--	doc4.nod4.value('@Calle','varchar(10)') Direccion,
+--	doc5.nod5.value('@Direccion','varchar(10)') Correo
+--from @xml.nodes('/ts:Estructuras/ts:Estructura') doc(nod)
+--cross apply doc.nod.nodes('cl:Clientes/cl:Cliente[@Nombre="Antonio Morales"]') as doc1(nod1)
+----cross apply doc1.nod1.nodes('cl:DatosContacto') as doc2(nod2)
+--outer apply doc1.nod1.nodes('cl:DatosContacto/cl:Telefonos/cl:Telefono') as doc3(nod3)
+--outer apply doc1.nod1.nodes('cl:Direcciones/cl:Direccion') as doc4(nod4)
+--outer apply doc1.nod1.nodes('cl:DatosContacto/cl:Emails/cl:Correo') as doc5(nod5)
 
 --OBTENER TODOS LOS DATOS DE CONTACTO DE 'MIGUEL MENDOZA'
+--;with xmlnamespaces('http://estructuras.org' as ts, 'http://clientes.org' as cl)
+--select
+--	doc.nod.value('@ID','varchar(10)') ID,
+--	doc.nod.value('@Nombre','varchar(20)') Ciudad,
+--	doc1.nod1.value('@Nombre','varchar(50)') Nombre_Cliente,
+--	doc1.nod1.value('@RFC','varchar(10)') RFC_Cliente,
+--	doc3.nod3.value('@Numero','varchar(10)') Numero_Telefono,
+--	doc3.nod3.value('@Tipo','varchar(10)') Tipo,
+--	doc4.nod4.value('@Calle','varchar(10)') Direccion,
+--	doc5.nod5.value('@Direccion','varchar(10)') Correo
+--from @xml.nodes('/ts:Estructuras/ts:Estructura') doc(nod)
+--cross apply doc.nod.nodes('cl:Clientes/cl:Cliente[@Nombre="Miguel Mendoza"]') as doc1(nod1)
+----cross apply doc1.nod1.nodes('cl:DatosContacto') as doc2(nod2)
+--outer apply doc1.nod1.nodes('cl:DatosContacto/cl:Telefonos/cl:Telefono') as doc3(nod3)
+--outer apply doc1.nod1.nodes('cl:Direcciones/cl:Direccion') as doc4(nod4)
+--outer apply doc1.nod1.nodes('cl:DatosContacto/cl:Emails/cl:Correo') as doc5(nod5)
 
 --OBTENER TODOS LOS TELEFONOS
+--;with xmlnamespaces('http://estructuras.org' as ts, 'http://clientes.org' as cl)
+--select
+--	doc.nod.value('@ID','varchar(10)') ID,
+--	doc.nod.value('@Nombre','varchar(20)') Ciudad,
+--	doc1.nod1.value('@Nombre','varchar(250)') Nombre_Cliente,
+--	doc1.nod1.value('@RFC','varchar(10)') RFC_Cliente,
+--	doc3.nod3.value('@Numero','varchar(10)') Numero_Telefono,
+--	doc3.nod3.value('@Tipo','varchar(10)') Tipo
+--from @xml.nodes('/ts:Estructuras/ts:Estructura') doc(nod)
+--outer apply doc.nod.nodes('cl:Clientes/cl:Cliente') as doc1(nod1)
+--outer apply doc1.nod1.nodes('cl:DatosContacto/cl:Telefonos/cl:Telefono') as doc3(nod3)
+--where doc3.nod3.value('@Numero','varchar(10)') IS NOT NULL
 
 --OBTENER LOS DIFERENTES TIPOS DE TELEFONO
+;with xmlnamespaces('http://estructuras.org' as ts, 'http://clientes.org' as cl)
+select distinct
+	doc3.nod3.value('@Tipo','varchar(10)') Tipo
+from @xml.nodes('/ts:Estructuras/ts:Estructura') doc(nod)
+cross apply doc.nod.nodes('cl:Clientes/cl:Cliente') as doc1(nod1)
+cross apply doc1.nod1.nodes('cl:DatosContacto/cl:Telefonos/cl:Telefono') as doc3(nod3)
+where doc3.nod3.value('@Tipo','varchar(10)') IS NOT NULL
