@@ -143,7 +143,6 @@ select @xml = '
         </cl:Direcciones>
         <cl:DatosContacto>
           <cl:Telefonos>
-            <cl:Telefono Numero="5512345678" Tipo="Celular" />
           </cl:Telefonos>
           <cl:Emails>
             <cl:Correo Direccion="Miguel@Mendoza.mx" />
@@ -281,7 +280,7 @@ select @xml = '
         </cl:Direcciones>
         <cl:DatosContacto>
           <cl:Telefonos>
-            <cl:Telefono Numero="5578912345" Tipo="Celuluar" />
+            <cl:Telefono Numero="5578912345" Tipo="Celular" />
             <cl:Telefono Numero="4755236589" Tipo="Casa" />
           </cl:Telefonos>
           <cl:Emails>
@@ -332,177 +331,43 @@ select @xml = '
   </ts:Estructura>
 </ts:Estructuras>';
 
---select @xml
+----EJERCICIOS
 
+--SELECT 'OBTENER  TODAS LAS ESTRUCTURAS'
 
+----OBTENER  TODAS LAS ESTRUCTURAS
 
-
---;with xmlnamespaces('http://estructuras.org' as ts)
---select 
---	doc.nod.query('*')
---from @xml.nodes('ts:Estructuras') doc(nod)
-
-
-
-
-
-
-
-
-
-
-
---;with xmlnamespaces(default 'http://estructuras.org')
---select 
---	doc.nod.query('*')
---from @xml.nodes('Estructuras') doc(nod)
-
-
-
-
-
-
-
-
-
-
-
---;with xmlnamespaces('http://estructuras.org' as ts)
---select 
---	doc.nod.query('*')
---from @xml.nodes('ts:Estructuras') doc(nod)
-
-
-
-
-
-
-
-
-
-
-
---;with xmlnamespaces('http://estructuras.org' as ts)
---select 
---	doc.nod.query('*') xml_content_internal
---from @xml.nodes('ts:Estructuras') doc(nod)
-
-
-
-
-
-
-
-
-
-
---;with xmlnamespaces('http://estructuras.org' as ts)
---select 
---	doc.nod.query('.') xml_content_external
---from @xml.nodes('ts:Estructuras') doc(nod)
-
-
-
-
-
-
-
-
-
-
-
-
---;with xmlnamespaces('http://estructuras.org' as ts)
---select 
---	doc.nod.query('ts:Estructura') xml_content_Child
---from @xml.nodes('ts:Estructuras') doc(nod)
-
-
-
-
-
-
-
-
-
-
-
---;with xmlnamespaces('http://estructuras.org' as ts)
---select 
---	doc.nod.query('ts:Estructura/*') xml_content_Child_Child
---from @xml.nodes('ts:Estructuras') doc(nod)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-----5512457896
 --;with xmlnamespaces('http://estructuras.org' as ts, 'http://clientes.org' as cl)
 --select 
---	doc.nod.query('ts:Estructura/cl:Clientes[1]/cl:Cliente[1]/*') xml_content_xpath_error
---from @xml.nodes('ts:Estructuras') doc(nod)
+--	doc.nod.value('@ID','varchar(10)') ID,
+--	doc.nod.value('@Nombre','varchar(100)') Nombre
+--from @xml.nodes('ts:Estructuras/ts:Estructura') doc(nod)
 
 
+--SELECT 'OBTENER TODOS LOS CLIENTES (NOMBRE, RFC, ESTRUCTURA) DE TODAS LAS ESTRUCTURAS'
 
-
-
-
-
-
-
-
-
-
-
-----5512457896
+----OBTENER TODOS LOS CLIENTES (NOMBRE, RFC, ESTRUCTURA) DE TODAS LAS ESTRUCTURAS
 --;with xmlnamespaces('http://estructuras.org' as ts, 'http://clientes.org' as cl)
 --select 
---	doc.nod.query('ts:Estructura[1]/cl:Clientes[1]/cl:Cliente[1]/cl:DatosContacto/cl:Telefonos/cl:Telefono[1]') xml_content_xpath
---from @xml.nodes('ts:Estructuras') doc(nod)
+--	--doc.nod.value('@ID','varchar(10)') ID,
+--	doc1.nod1.value('@Nombre','varchar(100)') Nombre,
+--	doc1.nod1.value('@RFC','varchar(15)') RFC,
+--	doc.nod.value('@Nombre','varchar(50)') Estructura
+--from @xml.nodes('ts:Estructuras/ts:Estructura') doc(nod)
+--cross apply doc.nod.nodes('cl:Clientes/cl:Cliente') as doc1(nod1)
 
 
+--SELECT 'OBTENER TODOS LOS CLIENTES DE UNA ESTRUCTURA (a elegir)'
 
-
-
-
-
-
-
-
-
-
-----5512457896
+----OBTENER TODOS LOS CLIENTES DE UNA ESTRUCTURA (a elegir)
 --;with xmlnamespaces('http://estructuras.org' as ts, 'http://clientes.org' as cl)
 --select 
---	doc.nod.query('ts:Estructura[@ID=001]') xml_content_xpath
---from @xml.nodes('ts:Estructuras') doc(nod)
-
-
-
-
-
-
-
-
-
-
-
-----5512457896
---;with xmlnamespaces('http://estructuras.org' as ts, 'http://clientes.org' as cl)
---select 
---	doc.nod.query('ts:Estructura/cl:Clientes/cl:Cliente[@RFC="XXX071221BBB"]/cl:DatosContacto/cl:Telefonos/cl:Telefono[@Tipo="Oficina"]') xml_content_xpath
---from @xml.nodes('ts:Estructuras') doc(nod)
-
-
+--	--doc.nod.value('@ID','varchar(10)') ID,
+--	doc1.nod1.value('@Nombre','varchar(100)') Nombre,
+--	doc1.nod1.value('@RFC','varchar(15)') RFC,
+--	doc.nod.value('@Nombre','varchar(50)') Estructura
+--from @xml.nodes('ts:Estructuras/ts:Estructura[2]') doc(nod)
+--cross apply doc.nod.nodes('cl:Clientes/cl:Cliente') as doc1(nod1)
 
 
 
@@ -511,50 +376,74 @@ select @xml = '
 
 --;with xmlnamespaces('http://estructuras.org' as ts, 'http://clientes.org' as cl)
 --select 
---	doc.nod.query('.//cl:Telefono') xml_content_xpath_2
---from @xml.nodes('ts:Estructuras/ts:Estructura[1]/cl:Clientes[1]/cl:Cliente') doc(nod)
+--	--doc.nod.value('@ID','varchar(10)') ID,
+--	doc1.nod1.value('@Nombre','varchar(100)') Nombre,
+--	doc1.nod1.value('@RFC','varchar(15)') RFC,
+--	doc.nod.value('@Nombre','varchar(50)') Estructura
+--from @xml.nodes('ts:Estructuras/ts:Estructura') doc(nod)
+--cross apply doc.nod.nodes('cl:Clientes/cl:Cliente') as doc1(nod1)
+--where doc.nod.value('@Nombre','varchar(50)') = 'Hidalgo' 
 
 
+--SELECT 'OBTENER TODOS LOS DATOS DE CONTACTO DE ''ANTONIO MORALES'''
 
-
-
-
-
-
-
-
-
-
-
-
-
+----OBTENER TODOS LOS DATOS DE CONTACTO DE 'ANTONIO MORALES'
 --;with xmlnamespaces('http://estructuras.org' as ts, 'http://clientes.org' as cl)
 --select 
---	doc.nod.query('.//cl:Telefono[1]') xml_content_xpath_3
---from @xml.nodes('ts:Estructuras/ts:Estructura[1]/cl:Clientes[1]/cl:Cliente[1]') doc(nod)
+--	doc.nod.value('@ID','varchar(10)') ID,
+--	doc1.nod1.value('@Nombre','varchar(100)') Nombre,
+--	doc1.nod1.value('@RFC','varchar(15)') RFC,
+--	doc2.nod2.value('@Numero','varchar(15)') [Numero Telefónico],
+--	doc2.nod2.value('@Tipo','varchar(15)') Tipo,
+--	doc3.nod3.value('@Direccion','varchar(50)') Email
+--from @xml.nodes('ts:Estructuras/ts:Estructura[4]') doc(nod)
+--cross apply doc.nod.nodes('cl:Clientes/cl:Cliente[1]') as doc1(nod1)
+--cross apply doc1.nod1.nodes('cl:DatosContacto/cl:Telefonos/cl:Telefono') as doc2(nod2)
+--cross apply doc1.nod1.nodes('cl:DatosContacto/cl:Emails/cl:Correo') as doc3(nod3)
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+SELECT 'OBTENER TODOS LOS DATOS DE CONTACTO DE ''MIGUEL MENDOZA'''
+--OBTENER TODOS LOS DATOS DE CONTACTO DE 'MIGUEL MENDOZA'
 ;with xmlnamespaces('http://estructuras.org' as ts, 'http://clientes.org' as cl)
 select 
-	doc.nod.query('.//cl:Telefono') xml_content_xpath_4
-from @xml.nodes('ts:Estructuras/ts:Estructura[1]/cl:Clientes[1]/cl:Cliente') doc(nod)
+	doc.nod.value('@ID','varchar(10)') ID,
+	doc1.nod1.value('@Nombre','varchar(100)') Nombre ,
+	doc1.nod1.value('@RFC','varchar(15)') RFC,
+	doc2.tel.value('@Numero','varchar(15)') [Numero Telefónico],
+	doc2.tel.value('@Tipo','varchar(15)') Tipo,
+	doc3.nod3.value('@Direccion','varchar(50)') Email
+from @xml.nodes('ts:Estructuras/ts:Estructura') doc(nod)
+cross apply doc.nod.nodes('cl:Clientes/cl:Cliente') as doc1(nod1)
+outer apply doc1.nod1.nodes('cl:DatosContacto/cl:Telefonos/cl:Telefono') as doc2(tel) --*********** outer
+cross apply doc1.nod1.nodes('cl:DatosContacto/cl:Emails/cl:Correo') as doc3(nod3)
+WHERE doc.nod.value('@Nombre','varchar(50)') = 'hidalgo'
+	AND doc1.nod1.value('@Nombre','varchar(50)') = 'Miguel Mendoza'
+
+
+
+--SELECT 'OBTENER TODOS LOS TELEFONOS'
+----OBTENER TODOS LOS TELEFONOS
+--;with xmlnamespaces('http://estructuras.org' as ts, 'http://clientes.org' as cl)
+--select 
+--	doc2.nod2.value('@Numero','varchar(15)') [Numero Telefónico],
+--	doc2.nod2.value('@Tipo','varchar(15)') Tipo
+--from @xml.nodes('ts:Estructuras/ts:Estructura') doc(nod)
+--cross apply doc.nod.nodes('cl:Clientes/cl:Cliente') as doc1(nod1)
+--cross apply doc1.nod1.nodes('cl:DatosContacto/cl:Telefonos/cl:Telefono') as doc2(nod2)
+
+
+
+
+--SELECT 'OBTENER LOS DIFERENTES TIPOS DE TELEFONO'
+----OBTENER LOS DIFERENTES TIPOS DE TELEFONO
+--;with xmlnamespaces('http://estructuras.org' as ts, 'http://clientes.org' as cl)
+--select distinct
+--	doc2.nod2.value('@Tipo','varchar(15)') Tipo
+--from @xml.nodes('ts:Estructuras/ts:Estructura') doc(nod)
+--cross apply doc.nod.nodes('cl:Clientes/cl:Cliente') as doc1(nod1)
+--cross apply doc1.nod1.nodes('cl:DatosContacto/cl:Telefonos/cl:Telefono') as doc2(nod2)
 
 
