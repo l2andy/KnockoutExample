@@ -1,0 +1,79 @@
+﻿<root>
+  <Personsas>
+    <Persona Nombre="Juan" ApellidoPaterno="Perez" ApellidoMaterno="Perez" Edad="25">
+      <Domicilio Id="1000" Calle="Calle 1" CodigoPostal="00001" Colonia="Colonia 1" NoExt="1" NoInt="101">
+        <Estado EstadoId="1" Nombre="Aguascalientes" />
+      </Domicilio>
+      <Trabajo>
+        <Domicilio Id="1000" Calle="Calle 1" CodigoPostal="00001" Colonia="Colonia 1" NoExt="1" NoInt="101">
+          <Estado EstadoId="1" Nombre="Aguascalientes" />
+          <Puesto Nivel="1" Puesto="Analista" />
+          <Jefe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <Nombre>Diana Cuevas Lopez</Nombre>
+            <Puesto>Analista</Puesto>
+            <Nivel>1</Nivel>
+          </Jefe>
+        </Domicilio>
+      </Trabajo>
+    </Persona>
+    <Persona Nombre="Manuel" ApellidoPaterno="Mejia" ApellidoMaterno="Hernandez" Edad="35">
+      <Domicilio Id="1000" Calle="Calle 2" CodigoPostal="00002" Colonia="Colonia 2" NoExt="2" NoInt="102">
+        <Estado EstadoId="2" Nombre="Baja California Norte" />
+      </Domicilio>
+      <Trabajo>
+        <Domicilio Id="1000" Calle="Calle 1" CodigoPostal="00001" Colonia="Colonia 1" NoExt="1" NoInt="101">
+          <Estado EstadoId="1" Nombre="Aguascalientes" />
+          <Puesto Nivel="1" Puesto="Analista" />
+          <Jefe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <Nombre>Diana Cuevas Lopez</Nombre>
+            <Puesto>Analista</Puesto>
+            <Nivel>1</Nivel>
+          </Jefe>
+        </Domicilio>
+      </Trabajo>
+    </Persona>
+    <Persona Nombre="Rosa" ApellidoPaterno="Cortes" ApellidoMaterno="Miramontes" Edad="28">
+      <Domicilio Id="1001" Calle="Calle 3" CodigoPostal="00003" Colonia="Colonia 3" NoExt="3" NoInt="s/n">
+        <Estado EstadoId="2" Nombre="Baja California Norte" />
+      </Domicilio>
+      <Trabajo>
+        <Domicilio Id="1001" Calle="Calle 2" CodigoPostal="00002" Colonia="Colonia 2" NoExt="2" NoInt="102">
+          <Estado EstadoId="2" Nombre="Baja California Norte" />
+          <Puesto Nivel="1" Puesto="Analista" />
+          <Jefe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <Nombre>Diana Cuevas Lopez</Nombre>
+            <Puesto>Analista</Puesto>
+            <Nivel>1</Nivel>
+          </Jefe>
+        </Domicilio>
+      </Trabajo>
+    </Persona>
+    <Persona Nombre="Paula" ApellidoPaterno="Duran" ApellidoMaterno="Morales" Edad="45">
+      <Domicilio Id="1002" Calle="Calle 4" CodigoPostal="00004" Colonia="Colonia 4" NoExt="4" NoInt="s/n">
+        <Estado EstadoId="3" Nombre="Baja California Sur" />
+      </Domicilio>
+      <Trabajo>
+        <Domicilio Id="1002" Calle="Calle 3" CodigoPostal="00003" Colonia="Colonia 3" NoExt="3" NoInt="s/n">
+          <Estado EstadoId="2" Nombre="Baja California Norte" />
+          <Puesto Nivel="3" Puesto="Gerente" />
+        </Domicilio>
+      </Trabajo>
+    </Persona>
+    <Persona Nombre="Diana" ApellidoPaterno="Cuevas" ApellidoMaterno="Lopez" Edad="28">
+      <Domicilio Id="1000" Calle="Calle 5" CodigoPostal="00005" Colonia="Colonia 5" NoExt="5" NoInt="103">
+        <Estado EstadoId="3" Nombre="Baja California Sur" />
+      </Domicilio>
+      <Trabajo>
+        <Domicilio Id="1000" Calle="Calle 1" CodigoPostal="00001" Colonia="Colonia 1" NoExt="1" NoInt="101">
+          <Estado EstadoId="1" Nombre="Aguascalientes" />
+          <Puesto Nivel="2" Puesto="Supervisor" />
+          <Jefe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <Nombre>Paula Duran Morales</Nombre>
+            <Puesto>Supervisor</Puesto>
+            <Nivel>2</Nivel>
+          </Jefe>
+        </Domicilio>
+      </Trabajo>
+    </Persona>
+  </Personsas>
+</root>
